@@ -11,6 +11,20 @@
     <div padding>
     </div>
   </ion-row>
+  <ion-row>
+    <div padding>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div padding>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div padding>
+    </div>
+  </ion-row>
+
+
 
   <form (ngSubmit)="login()" #loginForm="ngForm">
     <ion-list>
@@ -23,7 +37,18 @@
       </ion-item>
     </ion-list>
 
-     <button ion-button round outline [disabled]="!loginForm.form.valid" style="width:45%">Sing In</button>
-     <button ion-button round outline (click)="openSignUpPage()" style="width:50%">Sing Up</button>
+     <button ion-button round outline [disabled]="!loginForm.form.valid" style="width:45%" class="log-in-btn">Sing In</button>
+     <button ion-button round outline (click)="openSignUpPage()" style="width:50%" class="log-in-btn">Sing Up</button>
   </form>
+  
+  
+ 
+  <ion-item *ngIf="userProfile">
+  <ion-avatar item-left>
+    <img [src]="userProfile.photoURL">
+  </ion-avatar>
+  <h2>{{ userProfile.displayName }}</h2>
+  <h3>{{ userProfile.email }}</h3>
+</ion-item>
+
 </ion-content>

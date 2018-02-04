@@ -3,11 +3,18 @@ import { Component } from '@angular/core';
 import { SignUpPage } from '../sign-up/sign-up';
 import { TaskPage } from '../../task/task';
 import { AuthProvider } from '../../../providers/auth';
+// import { GooglePlus } from '@ionic-native/google-plus';
+// import firebase from 'firebase';
 
 @Component({
   templateUrl: 'login-email.html',
   selector: 'login-email',
 })
+
+//google stuff
+
+
+
 
 export class LoginEmailPage {
   form: any;

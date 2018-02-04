@@ -57,6 +57,7 @@ export class TaskPage {
   logout(){
     this.auth.logout();
     this.navCtrl.setRoot(LoginEmailPage);
+   //this.navCtrl.popToRoot();
   }
 
   addTask(){

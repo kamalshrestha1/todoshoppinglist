@@ -21274,7 +21274,7 @@ sub {
 }
 
 .login-email {
-  background: #fff;
+  background: #33ccff;
   background-size: 100%;
   background-position-y: 50%;
 }
@@ -21296,7 +21296,7 @@ sub {
 }
 
 .login-email form .log-in-btn {
-  background-color: #4aa5d9;
+  background-color: white;
   margin: auto;
 }
 
